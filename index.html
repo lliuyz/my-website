@@ -1,68 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using CloudBase Webify">
-    <title>Hello Webify！</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        code {
-            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-                monospace;
-        }
-        .App {
-            text-align: center;
-        }
-
-        .App-logo {
-            height: 40vmin;
-            pointer-events: none;
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            .App-logo {
-                animation: App-logo-spin infinite 20s linear;
-            }
-        }
-
-        .App-header {
-            background-color: #efefef;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: calc(10px + 2vmin);
-            color: black;
-        }
-
-        .App-link {
-            color: #108ee9;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="libs/scrollReveal/scrollreveal.min.js"></script>
+    <link 
+     rel="stylesheet"
+     href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
+     >
+    <link rel="stylesheet" href="libs/glide/glide.core.min.css">
+    <link rel="stylesheet" href="libs/glide/glide.theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <div id="root">
-        <div class="App">
-            <header class="App-header">
-                <img src="https://main.qcloudimg.com/raw/2f3b21706c37e8685efe5c60b26ceb24.png" class="App-logo" alt="logo">
-                <p>Welcome to Webify！</p>
-                <a class="App-link" href="https://webify.cloudbase.net/"
-                    target="_blank" rel="noopener noreferrer">webify.cloudbase.net</a>
-            </header>
+    <header>
+        <div class="logo">华三科技</div>
+        <nav>
+           <a href="#home">首页</a>
+           <a href="#about-us">关于我们</a>
+           <a href="#showcases">成功案例</a>
+           <a href="#service">服务流程</a>
+           <a href="#team-intro">团队介绍</a>
+           <a href="#data-section">公司动态</a>
+           <i class="fas fa-search"></i>
+        </nav>
+        <div class="burger">
+            <div class="burger-line1"></div>
+            <div class="burger-line2"></div>
+            <div class="burger-line3"></div>
+        </div>
+    </header>
+    <div id="home" class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+                <div class="glide__slide">
+                    <div class="slide-caption">
+                        <h1>专注中国本土人力资源服务行业 </h1>
+                        <h3>把世界最先进、成熟、实用的人力资源服务的服务模式和管理工具迅速运用于中国企业</h3>
+                        <button class="explore-btn">探索更多</button>  
+                    </div>
+                    <div class="backdrop"></div>
+                        <img src="images/people-in-couch-1024248.jpg" alt="">
+                </div>
+                <div class="glide__slide">
+                    <div class="slide-caption left">
+                        <h1>牢记使命 不忘初心</h1>
+                        <h3>致力于提升本土企业人力资源的职业化、专业化、标准化、信息化，努力与用户建立长期的战略合作伙伴关系型</h3>
+                        <button class="explore-btn">探索更多</button>
+                    </div>
+                    <div class="backdrop"></div>
+                        <video src="videos/working-man.mp4" muted autoplay loop></video>
+                </div>
+                
+            </div>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <buttom class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <
+            </buttom>
+            <buttom class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                >
+            </buttom>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+
         </div>
     </div>
+    <div class="content-wrapper">
+            <section id="about-us" class="about-us">
+                <h2 class="title1">关于我们</h2>
+                <p class="intro">
+                    作为企业人力资源综合解决方案提供商，我们将为您提供现代企业人力资源管理有实践意义的可操作性、可执行的服务方案
+                </p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4 class="feature-title">品牌价值</h4>
+                        <p class="feature-content">让平台、企业、求职者共同进步和获得价值</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h4 class="feature-title">服务理念</h4>
+                        <p class="feature-content">专业、用心、高效、有价值的服务</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h4 class="feature-title">企业愿景</h4>
+                        <p class="feature-content">中国企业人力资源服务行业领导品牌</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-desktop"></i>
+                        <h4 class="feature-title">企业文化</h4>
+                        <p class="feature-content">信守承诺，坚持初心，群策群力，上下同欲者胜</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-user-circle"></i>
+                        <h4 class="feature-title">人资服务</h4>
+                        <p class="feature-content"></p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-balance-scale"></i>
+                        <h4 class="feature-title">雇主险</h4>
+                        <p class="feature-content"></p>
+                    </div>
+                </div>
+            </section>
+        <section id="showcases" class="showcases section-bg">
+            <h2 class="title1">成功案例</h2>
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="*">全部</button>
+                <button class="filter-btn" data-filter=".waibao">外包</button>
+                <button class="filter-btn" data-filter=".guzhuxian">雇主险</button>
+                <button class="filter-btn" data-filter=".caikuai">财会</button>
+                <button class="filter-btn" data-filter=".qingke">轻客</button>
+            </div>
+            <div class="cases">
+                <div class="case-item waibao guzhuxian">
+                    <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" 
+                    alt="" 
+                    >
+                </div>
+                <div class="case-item guzhuxian caikuai">
+                    <img src="images/photo-of-imac-near-macbook-1029757.jpg" 
+                    alt="" 
+                    >
+                </div>
+                <div class="case-item waibao guzhuxian caikuai">
+                    <img src="images/apple-laptop-notebook-office-39284.jpg" 
+                    alt="" 
+                    >
+                </div>
+                <div class="case-item qingke waibao">
+                    <img src="images/apple-apple-device-design-desk-285814.jpg" 
+                    alt="" 
+                    >
+                </div>
+                <div class="case-item guzhuxian qingke">
+                    <img src="images/person-using-black-and-white-smartphone-and-holding-blue-230544.jpg" 
+                    alt="" 
+                    >
+                </div>
+                <div class="case-item guzhuxian caikuai">
+                    <img src="images/person-holding-a-smartphone-892757.jpg" 
+                    alt="" 
+                    >
+                </div>
+                <div class="case-item waibao caikuai">
+                    <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" 
+                    alt="" 
+                    >
+                </div>
+                <div class="case-item guzhuxian waibao">
+                    <img src="images/bokeh-photography-of-person-holding-turned-on-iphone-1440727.jpg" 
+                    alt="" 
+                    >
+                </div>
+            </div>
+        </section>
+        <section id="service" class="service">
+            <h2 class="title1">服务流程</h2>
+            <p class="intro">
+                服务过程的介绍服务过程的介绍服务过程的介绍服务过程的介绍
+            </p>
+            <div class="services">
+                <div class="service-item">
+                    <i class="fas fa-comments"></i>
+                    <h4 class="service-title">需求沟通</h4>
+                    <p class="service-content">
+                        需求沟通需求沟通需求沟通需求沟通需求沟通需求沟通
+                    </p>
+                </div>
+                
+                <div class="service-item">
+                    <i class="fas fa-file-signature"></i>
+                    <h4 class="service-title">签订合同</h4>
+                    <p class="service-content">
+                        签订合同签订合同签订合同签订合同签订合同签订合同签订合同
+                    </p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-user"></i>
+                    <h4 class="service-title">提案阶段</h4>
+                    <p class="service-content">
+                        提案阶段提案阶段提案阶段提案阶段提案阶段提案阶段提案阶段
+                    </p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h4 class="service-title">制作阶段</h4>
+                    <p class="service-content">
+                        制作阶段制作阶段制作阶段制作阶段制作阶段制作阶段制作阶段制作阶段
+                    </p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-user-check"></i>
+                    <h4 class="service-title">网站验收</h4>
+                    <p class="service-content">
+                        网站验收网站验收网站验收网站验收网站验收网站验收网站验收网站验收
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="team-intro" class="team-intro section-bg">
+            <h2 class="title1">团队介绍</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="images/man-wearing-black-suit-2955376.jpg" alt="">
+                    </div>
+                    <h4 class="name">刘德华</h4>
+                    <p class="position">综合业务负责人</p>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-weixin">
+                                <p class="weixin">18353708381</p>
+                            </i></a>
+                                
+                        </li>
+                        <!-- <li>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                        </li> -->
+                        <li>
+                            <a href="#"><i class="fab fa-qq">
+                                <p class="qq">810003643</p>
+                            </i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-phone">
+                                <p class="dianhua">18353708381</p>
+                            </i></a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="images/business-woman-2697954_1920.jpg" alt="">
+                    </div>
+                    <h4 class="name">邓紫棋</h4>
+                    <p class="position">轻客业务负责人</p>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-weixin">
+                                <p class="weixin">11111111111</p>
+                            </i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                        </li> -->
+                        <li
+                        ><a href="#"><i class="fab fa-qq">
+                            <p class="qq">1111111</p>
+                        </i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-phone">
+                                <p class="dianhua">18353708381</p>
+                            </i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="images/selective-focus-photograph-of-man-wearing-gray-suit-jacket-1138903.jpg" alt="">
+                    </div>
+                    <h4 class="name">张学友</h4>
+                    <p class="position">雇主险业务负责人</p>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-weixin">
+                                <p class="weixin">22222222222</p>
+                            </i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                        </li> -->
+                        <li
+                        ><a href="#"><i class="fab fa-qq">
+                            <p class="qq">2222222</p>
+                        </i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-phone">
+                                <p class="dianhua">18353708381</p>
+                            </i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team-member">
+                    <div class="profile-image">
+                        <img src="images/smiling-woman-wearing-black-sweater-1587009.jpg" alt="">
+                    </div>
+                    <h4 class="name">邓丽君</h4>
+                    <p class="position">财会业务负责人</p>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-weixin">
+                                <p class="weixin">33333333333</p>
+                            </i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                        </li> -->
+                        <li
+                        ><a href="#"><i class="fab fa-qq">
+                            <p class="qq">3333333</p>
+                        </i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-phone">
+                                <p class="dianhua">18353708381</p>
+                            </i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="data-section" class="data-section">
+            <div class="data-piece">
+                <i class="fas fa-building"></i>
+                <div class="num">5</div>
+                <div class="data-desc">家分公司</div>
+            </div>
+            <div class="data-piece">
+                <i class="fas fa-users"></i>
+                <div class="num">160</div>
+                <div class="data-desc">人内部管理团队</div>
+            </div>
+            <div class="data-piece">
+                <i class="fas fa-envelope-open"></i>
+                <div class="num">500</div>
+                <div class="data-desc">家服务企业客户</div>
+            </div>
+            <div class="data-piece">
+                <i class="fas fa-user-secret"></i>
+                <div class="num">150000</div>
+                <div class="data-desc">年平均服务求职者</div>
+            </div>
+            <div class="data-piece">
+                <i class="fas fa-plane"></i>
+                <div class="num">6000</div>
+                <div class="data-desc">单年平均雇主险</div>
+            </div>
+        </section>
+        <section class="company-activities">
+            <h2 class="title1">公司动态</h2>
+            <p class="intro">关注公司动态，第一时间获取一手消息</p>
+            <div class="activities">
+                <div class="activity">
+                    <div class="act-image-wrapper">
+                        <img src="images/activity01-image.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                        <p class="date-published">
+                            <i class="far fa-calendar"></i>2020年12月1日
+                     </p>
+                     <p class="comments"><i class="far fa-comments"></i>33条评论</p>
+                    </div>
+                    <h2 class="act-title">提供互联网介入的isp公司</h2>
+                    <article>
+                        提到派遣，想必大家都不陌生，就是由第三方劳务派遣到企业工作，属于三方用工关系的一种模式。那么，劳务派遣一般分为哪几类呢？来看劳务派遣公司带来的详细介绍：
+                        1、全程派遣
+　　用人单位提出招聘要求，派遣公司负责实施招聘，将工人派遣到用人单位，由派遣公司代替用人单位办理用工、辞退手续、工资支付、各项社会保险、住房公积金、，代扣代缴个人所得税、福利费、档案移交、户籍实施及双方约定的其他工作
+　　2、调派
+　　需要劳务派遣的企业自行招聘、选拔、培训人员，由劳务派遣公司与员工签订劳动合同，由劳务派遣公司负责员工的薪酬、福利、绩效考核、劳动争议处理等事宜
+　　  </article>
+                    <div class="readmore-btn"><a href="news.html" class="readmore-btn"> 阅读更多</a> </div>
+                </div>
+                <div class="activity">
+                    <div class="act-image-wrapper">
+                        <img src="images/watercrafts-on-river-3464632.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                        <p class="date-published">
+                            <i class="far fa-calendar"></i>2020年12月1日
+                     </p>
+                     <p class="comments"><i class="far fa-comments"></i>33条评论</p>
+                    </div>
+                    <h2 class="act-title">提供互联网介入的isp公司</h2>
+                    <article>
+                        劳务派遣就是由第三方劳务派遣到企业工作，属于三方用工关系的一种模式。那么，劳务派遣一般分为哪几类呢？来看劳务派遣公司带来的详细介绍：
+                   3、项目调度
+　　用人单位急需相关专业技术人员完成某项工作。项目完成后，只需要少数维护人员。剩余人员可以结束工作，公司办理解除劳动关系手续，解决了“一用一养”的问题。（这种形式很好地解决了一些只需要在企业呆一段时间，不需要在企业呆很长时间的人才分流问题）
+　　4、缩编调遣
+　　缩编调遣是指企业将其用人单位身份转移给调遣公司，供其招聘或聘用的员工使用。企业支付派遣公司员工的派遣费用，派遣公司支付所有可能的费用，包括工资、资金、福利、各种社会保障基金，并承担雇主的所有社会和法律责任。其目的是在面临风险时减少固定员工数量，提高组织适应性和人力资源灵活性
+　　</article>
+                    <!-- <button class="readmore-btn"> <a href="news.html"> </a> 阅读更多</button> -->
+                    <div class="readmore-btn"><a href="news.html" class="readmore-btn"> 阅读更多</a> </div>
+                </div>
+                <div class="activity">
+                    <div class="act-image-wrapper">
+                        <img src="images/red-suspension-bridge-3493772.jpg" alt="">
+                    </div>
+                    <div class="meta">
+                        <p class="date-published">
+                            <i class="far fa-calendar"></i>2020年12月1日
+                     </p>
+                     <p class="comments"><i class="far fa-comments"></i>33条评论</p>
+                    </div>
+                    <h2 class="act-title">提供互联网介入的isp公司</h2>
+                    <article>
+                        
+                        5、试用派遣
+　　试用派遣是新的派遣方式。雇主将新员工调到派遣公司，然后以派遣的形式试用。其目的是让雇主在准确选拔人才方面有更多的保障，避免因选拔和测试而导致的错误风险，并有效降低人员成本。
+　　以上就是劳务派遣公司分享的有关劳务派遣分类的详细介绍，希望能对您有所帮助。另外，如果您刚好有派遣、代招等人力方面的需求或者疑问，都欢迎您随时来电与我们取得联系！
+                    </article>
+                    <div class="readmore-btn"><a href="news.html" class="readmore-btn"> 阅读更多</a> </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-menus">
+            <div class="contact-us">
+                <p class="menu-title">联系我们</p>
+                <p>地址:山东省济宁市高新区海川路创意大厦</p>
+                <p>座机：0537-2078568</p>
+                <p>手机：15550718444</p>
+                <p>电子邮箱：yazhouno@163.com</p>
+            </div>
+            <!-- <div class="service-menu footer-menu">
+                <p class="menu-title">服务概览</p>
+                <ul class="menu-items">
+                    <li><a href="#">网站建设</a></li>
+                    <li><a href="#">域名购买</a></li>
+                    <li><a href="#">网页设计</a></li>
+                    <li><a href="#">移动应用</a></li>
+                </ul>
+            </div>
+            <div class="service-menu footer-menu">
+                <p class="menu-title">成功案例</p>
+                <ul class="menu-items">
+                    <li><a href="#">桌面网站</a></li>
+                    <li><a href="#">移动网站</a></li>
+                    <li><a href="#">科研项目</a></li>
+                    <li><a href="#">软件应用</a></li>
+                </ul>
+            </div>
+            <div class="service-menu footer-menu">
+                <p class="menu-title">公司动态</p>
+                <ul class="menu-items">
+                    <li><a href="#">信息公开</a></li>
+                    <li><a href="#">最近新闻</a></li>
+                    <li><a href="#">最新博客</a></li>
+                    <li><a href="#">行业新闻</a></li>
+                </ul>
+            </div>
+            <div class="service-menu footer-menu">
+                <p class="menu-title">帮助与支持</p>
+                <ul class="menu-items">
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">联系客服</a></li>
+                    <li><a href="#">文档资源</a></li>
+                </ul>
+            </div> -->
+            <p class="icp-info">京ICP备 1215456321-1号</p>
+            <p class="rights">
+                &copy;2022 华三科技  -  服务链接世界 官网  版权所有
+            </p>
+            <div class="scrollToTop">
+                <a href="#home"><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="libs/anime/anime.min.js"></script>
+    <script src="libs/glide/glide.min.js"></script>
+    <script src="libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="index.js"></script>
 </body>
-
 </html>
